@@ -1,0 +1,24 @@
+{
+  "name": "testpilot",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "test": "turbo test",
+    "test:pilot": "npx tsx --tsconfig tsconfig.json apps/cli/src/index.ts run",
+    "lint": "turbo lint"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "playwright": "^1.58.2",
+    "tsx": "^4.19.3",
+    "tsconfig-paths": "^4.2.0",
+    "turbo": "latest",
+    "typescript": "latest"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

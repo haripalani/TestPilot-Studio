@@ -1,0 +1,20 @@
+{
+  "files": [],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@testpilot/engine": ["packages/engine/src/index.ts"],
+      "@testpilot/types": ["packages/types/src/index.ts"],
+      "@testpilot/playwright-adapter": ["packages/playwright-adapter/src/index.ts"],
+      "@testpilot/api-testing": ["packages/api-testing/src/index.ts"]
+    }
+  },
+  "include": ["examples/**/*.pilot.ts"],
+  "references": [
+    { "path": "packages/types" },
+    { "path": "packages/engine" },
+    { "path": "packages/playwright-adapter" },
+    { "path": "packages/api-testing" },
+    { "apps/cli": "apps/cli" }
+  ]
+}

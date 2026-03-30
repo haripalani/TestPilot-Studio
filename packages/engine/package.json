@@ -1,0 +1,17 @@
+{
+  "name": "@testpilot/engine",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@testpilot/types": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}
